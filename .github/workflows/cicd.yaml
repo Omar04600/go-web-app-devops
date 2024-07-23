@@ -1,5 +1,3 @@
-# CICD using GitHub actions
-
 name: CI/CD
 
 # Exclude the workflow to run on changes to the helm chart
@@ -87,10 +85,8 @@ jobs:
 
     - name: Commit and push changes
       run: |
-        git config --global user.email "abhishek@gmail.com"
-        git config --global user.name "Abhishek Veeramalla"
+        git config --global user.email "mao7799937786@gmail.com"
+        git config --global user.name "Omar04600"
         git add helm/go-web-app-chart/values.yaml
         git commit -m "Update tag in Helm chart"
         git push
-
-
